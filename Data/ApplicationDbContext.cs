@@ -9,5 +9,7 @@ namespace Hotel_manager.Data;
 public class ApplicationDbContext : DbContext
 {
     DbSet<Room_type> Room_types {get; set;}
+    DbSet<Room> Rooms {get; set; }
+    
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 }
