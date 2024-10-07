@@ -11,5 +11,6 @@ public class ApplicationDbContext : DbContext
     DbSet<Room_type> Room_types {get; set;}
     DbSet<Room> Rooms {get; set; }
     DbSet<Guest> Guests {get; set; }
+    DbSet<Employee> Employees { get; set;}
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 }
