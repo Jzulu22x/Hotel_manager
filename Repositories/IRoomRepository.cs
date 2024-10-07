@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Hotel_manager.Models;
 
 namespace Hotel_manager.Repositories;
-public interface IRoomInterface
+public interface IRoomRepository
 {
     Task<IEnumerable<Room>> GetAviable();
     Task<int> GetTotal();
