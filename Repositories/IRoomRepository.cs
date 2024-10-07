@@ -10,6 +10,6 @@ public interface IRoomRepository
     Task<IEnumerable<Room>> GetAviable();
     Task<int> GetTotal();
     Task<IEnumerable<Room>> GetAll();
-    Task<Room> GetById(int id);
+    Task<Room?> GetById(int id);
     Task<IEnumerable<Room>> GetOccupied();
 }
