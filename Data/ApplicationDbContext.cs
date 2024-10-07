@@ -19,5 +19,7 @@ public class ApplicationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         RoomTypeSeeder.Seed(modelBuilder);
+
+        RoomTypeSeeder.Seed(modelBuilder);
     }
 }
