@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Hotel_manager.Models;
 
 [Table("guests")]
-public class Guests
+public class Guest
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
