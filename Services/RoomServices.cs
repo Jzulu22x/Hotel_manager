@@ -22,7 +22,7 @@ public class RoomServices : IRoomRepository
         return await _context.Rooms.ToListAsync();
     }
 
-    public async Task<IEnumerable<Room>> GetAviable()
+    public async Task<IEnumerable<Room>> GetAvailable()
     {
         return await _context.Rooms.Where(r => r.Availability).ToListAsync();
     }

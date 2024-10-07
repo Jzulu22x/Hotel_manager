@@ -7,7 +7,7 @@ using Hotel_manager.Models;
 namespace Hotel_manager.Repositories;
 public interface IRoomRepository
 {
-    Task<IEnumerable<Room>> GetAviable();
+    Task<IEnumerable<Room>> GetAvailable();
     Task<int> GetTotal();
     Task<IEnumerable<Room>> GetAll();
     Task<Room?> GetById(int id);

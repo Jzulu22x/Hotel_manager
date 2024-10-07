@@ -1,5 +1,7 @@
 using DotNetEnv;
 using Hotel_manager.Data;
+using Hotel_manager.Repositories;
+using Hotel_manager.Services;
 using Microsoft.EntityFrameworkCore;
 
 Env.Load();
@@ -19,6 +21,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.Parse("8.0.20-mysql")));
 
 builder.Services.AddControllers();
+
+builder.Services.AddScoped <IRoomRepository, RoomServices> ();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
