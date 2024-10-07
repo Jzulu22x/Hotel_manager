@@ -24,6 +24,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped <IRoomRepository, RoomServices> ();
 builder.Services.AddScoped <IRoom_typeRepository, Room_typeServices> ();
+builder.Services.AddScoped<IGuestRepository, GuestServices>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

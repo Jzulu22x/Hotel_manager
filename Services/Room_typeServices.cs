@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Hotel_manager.Data;
 using Hotel_manager.Models;
 using Hotel_manager.Repositories;
