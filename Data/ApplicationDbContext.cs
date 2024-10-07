@@ -20,6 +20,6 @@ public class ApplicationDbContext : DbContext
     {
         RoomTypeSeeder.Seed(modelBuilder);
 
-        RoomTypeSeeder.Seed(modelBuilder);
+        RoomSeeder.Seed(modelBuilder);
     }
 }
